@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        :root{
+            --violet : #7562E0;
+        }
+
+
+        .text-violet {
+            color: var(--violet);
+        }
+
+        body{
+            font-family: 'Montserrat', sans-serif;
+        }
+        .nav { 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-left{
+            
+        }
+
+        .nav-right{
+            
+        }
+
+        .nav-item{
+            text-decoration: none;
+            margin-left: 0.5rem;
+            color : rgba(0,0,0, .8);
+        }
+
+        .nav-brand{
+            color: var(--violet);
+        }
+
+        .branding{
+         
+        }
+
+        .branding-left{
+    
+            
+        }
+
+        .branding-right{
+            
+            height : 500px;
+            background-image: url('https://kouyatekarim.netlify.app/res/images/blob.svg') ;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+           
+       
+
+        }
+
+        .branding-left h1{
+            font-size: 5rem;
+        }
+
+        .img-container{
+           
+            width: 300px;
+            height: 300px;
+        }
+
+        .img-container img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .skill{
+            height: 250px;
+           
+            border-radius: 0.5rem;
+            box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.18);
+            position: relative;
+        }
+
+        .box{
+            position: absolute;
+            bottom: 2rem;
+            left: 2rem;
+            color: var(--violet);
+            transition: ease-in-out 0.3s;
+        }
+
+        .box i{
+            font-size: 2rem;
+            margin-bottom: .5rem;
+            transition: ease-in-out 0.3s;
+
+    
+        }
+
+        .skill:hover{
+            background-color: var(--violet);
+            color: white;
+        }
+
+        .skill:hover .box {
+            
+           
+        }
+
+        .skill:hover h5{
+            margin-bottom: 2rem;
+            color: white;
+        }
+
+        .skill:hover .box i{
+            transform : rotateZ(360deg);
+            color: white;
+        }
+        .line{
+
+        }
+
+        .img-box{
+          
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .img-box img{
+            width: 100%;
+            transition: ease-in-out 2s;
+           
+        }
+
+        .img-box:hover img{
+            transform: translateY(calc( 300px - 100%));
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav container mt-3">
+            <div class="nav-left">
+                <h1 class="nav-brand">KKSTAR</h1>
+            </div>
+    
+    
+    
+            <div class="nav-right">
+                <a href="" class='nav-item'>A propos</a>
+                <a href="" class='nav-item'>Mes projets</a>
+                <a href="" class='nav-item'>Contact</a>
+            </div>
+    
+       </nav>
+
+
+       <div class="branding container mt-2">
+           <div class="row">
+                <div class="branding-left col-md-8">
+                    <h1>Kouyate <br>
+                        Karim</h1>
+
+                    <p>Dévéloppeur Fullstack, Instructeur Fullstack Js à Gomycode</p>
+
+                    <button class="btn btn-success mt-3 btn-lg" type="submit">Contactez moi</button>
+                </div>
+    
+                <div class="branding-right col-md-4">
+                        <div class="img-container">
+                            <img src="https://kouyatekarim.netlify.app/res/images/gomycode.jpeg" alt="">
+                        </div>
+                </div>
+           </div>
+           
+       </div>
+    </header>
+
+
+    <main>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="https://kouyatekarim.netlify.app/res/images/go.gif" alt="">
+                </div>
+                <div class="col-md-3">
+                    <img src="https://kouyatekarim.netlify.app/res/images/go.gif" alt="">
+                </div>
+                <div class="col-md-3">
+                    <img src="https://kouyatekarim.netlify.app/res/images/go.gif" alt="">
+                </div>
+                <div class="col-md-3">
+                    <img src="https://kouyatekarim.netlify.app/res/images/go.gif" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="container mt-2 mb-2" >
+            <div class="row">
+                <div class="col-md-4" style="border: 1px solid red; height:500px">
+
+                </div>
+    
+    
+                <div class="col-md-8" style="border: 1px solid red; height:500px"> 
+                    <div>
+                        <h1 class="text-violet">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, ullam?</h1>
+                    </div>
+
+                    <br><br><br><br>
+
+                    
+                    <div class="container ">
+
+                  
+                        <div class="row flex-nowrap">
+                            
+                                <div class="col-md-4 skill ">
+                                    <div class="box">
+                                        <i class="fas fa-drafting-compass"></i>
+                                        <h5>Product Designer</h5>
+                                        <p  class='text-white'>Découvrir plus</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 skill ms-2">
+                                    <div class="box">
+                                        <i class="fas fa-desktop"></i>
+                                        <h5>Product Designer</h5>
+                                        <p  class='text-white'>Découvrir plus</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 skill ms-2">
+                                    <div class="box">
+                                        <i class="fas fa-bolt"></i>
+                                        <h5>Product Designer</h5>
+
+                                        <p class='text-white'>Découvrir plus</p>
+                                    </div>
+                                </div>
+                            
+
+                        </div>
+
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mt-2 p-2">
+            <div class="row">
+                <div class="col-md-12 line">
+                    <div class="row">
+                        <div class="col-md-4 img-box">
+                            <img src="https://kouyatekarim.netlify.app/res/images/image1-hover.jpeg" alt="">
+                        </div>
+                        <div class="col-md-4 img-box">
+                            <img src="https://kouyatekarim.netlify.app/res/images/image2-hover.webp" alt="">
+                        </div>
+                        <div class="col-md-4 img-box">
+                            <img src="https://kouyatekarim.netlify.app/res/images/image3-hover.jpg" alt="">
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="col-md-12 line mt-3 mb-2">
+                    <div class="row ">
+                        <div class="col-md-4 img-box">
+                            <img src="https://kouyatekarim.netlify.app/res/images/image4-hover.jpeg" alt="">
+                        </div>
+                        <div class="col-md-4 img-box">
+                            <img src="https://kouyatekarim.netlify.app/res/images/image5-hover.jpeg" alt="">
+                        </div>
+                        <div class="col-md-4 img-box">
+                            <img src="https://kouyatekarim.netlify.app/res/images/image6-hover.jpg" alt="">
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+           
+        </div>
+    </main>
+   
+
+   
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
